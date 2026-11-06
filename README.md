@@ -1,18 +1,17 @@
-# FZBOY Personal Website
+# FZBOY Personal Website — Live Discord Edition
 
-## GitHub Pages setup
-1. Create a GitHub repository.
-2. Upload every file and folder from this project, keeping the folder structure unchanged.
-3. Open **Settings → Pages**.
-4. Choose **Deploy from a branch**, select `main` and `/(root)`, then save.
+## One-time setup required
+1. Join the [Lanyard Discord server](https://discord.gg/lanyard) using the Discord account with ID `1549995551288852584`.
+2. Keep Discord presence visible; Invisible mode appears offline.
+3. Upload all files/folders to your GitHub repository without changing the folder structure.
+4. GitHub **Settings → Pages → Deploy from a branch → main → /(root)**.
 
-## Music
-Add your permitted audio file to `assets/` and name it `music.mp3`.
+The site fetches `https://api.lanyard.rest/v1/users/1549995551288852584` and subscribes to live updates. Lanyard only exposes presence for users who opt in by joining its server.
 
 ## Files
 - `index.html` — website structure
-- `css/style.css` — styling and responsive design
-- `js/script.js` — snowfall, enter screen, music and Discord ID copy
-- `assets/` — music and optional images
+- `css/style.css` — responsive dark styling and avatar decoration overlay
+- `js/script.js` — snowfall, enter screen, music controls and live Discord integration
+- `assets/` — add your own `music.mp3` here
 
-The Discord card currently displays the supplied username and ID. Live Discord presence, real avatar and profile badges require a separate Discord integration.
+Real Discord avatar, username, equipped avatar decoration (if provided by Discord/Lanyard), and online/idle/DND/offline status load dynamically. Not every profile badge or collectible is rendered. No Discord bot token is exposed in this public website.
